@@ -1,0 +1,26 @@
+{
+  "name": "cnb",
+  "version": "1.0.0",
+  "description": "CNB Utility Library",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "start": "npm run build:live",
+    "build:live": "nodemon --exec ./node_modules/.bin/ts-node -- ./index.ts",
+    "build" : "./node_modules/.bin/tsc "
+
+  },
+  "keywords": [
+    "cnb",
+    "fx",
+    "rates",
+    "money",
+    "market"
+  ],
+  "author": "jindrich@vavruska.cz",
+  "license": "MIT",
+  "devDependencies": {
+    "@types/node": "^8.0.52",
+    "typescript": "^2.6.1"
+  }
+}
